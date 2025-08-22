@@ -1,15 +1,14 @@
-{
-  "compilerOptions": {
-    "target": "ES2020",
-    "lib": ["ES2020","DOM","DOM.Iterable"],
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "jsx": "react-jsx",
-    "strict": true,
-    "skipLibCheck": true,
-    "noEmit": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true
-  },
-  "include": ["src"]
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html","./src/**/*.{ts,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        brand: { DEFAULT: "#0ea5e9", 50:"#f0f9ff", 100:"#e0f2fe", 600:"#0284c7", 900:"#0c4a6e" }
+      },
+      borderRadius: { '2xl': '1.25rem' },
+      boxShadow: { soft: "0 8px 24px rgba(2,132,199,.12)" }
+    },
+    fontFamily: { sans: ["Heebo","system-ui","sans-serif"] }
+  }
 }
