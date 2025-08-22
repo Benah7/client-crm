@@ -1,5 +1,3 @@
-mkdir -p public
-cat > public/manifest.webmanifest <<'EOF'
 {
   "name": "BHCRM",
   "short_name": "BHCRM",
@@ -9,4 +7,3 @@ cat > public/manifest.webmanifest <<'EOF'
   "background_color": "#ffffff",
   "theme_color": "#0ea5e9"
 }
-EOF
