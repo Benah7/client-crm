@@ -1,3 +1,5 @@
+mkdir -p public
+cat > public/manifest.webmanifest <<'EOF'
 {
   "name": "BHCRM",
   "short_name": "BHCRM",
@@ -5,9 +7,6 @@
   "scope": "/client-crm/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#0ea5e9",
-  "icons": [
-    { "src": "/client-crm/icon-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "/client-crm/icon-512.png", "sizes": "512x512", "type": "image/png" }
-  ]
+  "theme_color": "#0ea5e9"
 }
+EOF
